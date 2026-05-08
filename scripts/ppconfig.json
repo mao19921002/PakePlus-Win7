@@ -199,6 +199,7 @@
         "endPwdError": "密码错误",
         "pwdStyle": "flat",
         "pwdTheme": "dark",
-        "autoStart": true
+        "autoStart": true,
+        "cors": true
     }
 }
