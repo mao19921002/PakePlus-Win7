@@ -156,11 +156,7 @@ jobs:
               run: node ./scripts/ppworker.cjs
 
             - name: Build Electron App
-              run: |
-                  npx electron-builder \
-                    ${{ matrix.electron_target }} \
-                    ${{ matrix.build_args }} \
-                    --publish never
+              run: npx electron-builder ${{ matrix.electron_target }} ${{ matrix.build_args }} --publish never
 
             - name: Rename files
               if: env.RENAME == 'true'
